@@ -1,0 +1,47 @@
+#skills{
+
+    //box-sizing: border-box;
+
+    .row{
+        display: flex;
+        display: block;
+        margin: auto;
+    }
+
+    .col{
+        flex: 25%;
+    }
+
+    
+
+    .listRow{
+        display: flex;
+    }
+
+    .listCol{
+        box-sizing: border-box;
+        flex: 50%;
+        padding: 10px 20px;
+        //margin: auto;
+    }
+}
+
+.skillWall{
+    width: 90%;
+    //margin: auto;
+    //text-align: center;
+}
+
+@media(max-width: 1248px){
+
+    .listRow{
+        display: block;
+    }
+
+    .listCol{
+        flex: 100%;
+        padding: 10px;
+        //margin: auto;
+    }
+
+}

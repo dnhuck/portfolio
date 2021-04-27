@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@mixin black{
+    background-color: black;
+}
+
+body{
+    @include black;
+    color: white;
+    //margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+h1,h2,h3{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.bgVid{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    //margin: auto;
+    text-align: center;
+}
+
+main{
+
+    .column{
+        display: flex;
+    }
+
+    .row{
+        flex: 50%;
+        padding: 10px;
+    }
+
+    img{
+        width: 90%;
+    }
+}
+
+.fsVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fsVideo video{
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+.overlay{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.content{
+    z-index: 2;
+}
+
+.content img{
+    width: 375px;
+    padding-bottom: 0;
+}
+
+.content p{
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: .5rem;
+}
+
+.socialMenu{
+    font-size: 60px;
+    padding-bottom: 30px;
+    
+    a{
+        color: white;
+    }
+}
+
+.btn{
+    background: black;
+    border: .5px solid gold;
+    color: gold;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+.backToTop{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+//  CONTENTS OF PAGE
+
+.contents{
+    width: 65%;
+    margin: auto;
+
+}
+
+// HEADER CODE
+
+header{
+
+    h1,h2,h3{
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+    }
+
+    ul{
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    li{
+        display: inline-block;
+        padding: 20px;
+    }
+
+    li a{
+        text-decoration: none;
+        color: lightgray;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        
+    }
+
+    a:hover{
+        color: red;
+    }
+
+    .toggle{
+        width: 100%;
+        padding: 10px 20px;
+        text-align: center;
+        color: gold;
+        font-size: 40px;
+        display: none;
+    }
+}
+
+.scrollUp{
+    color: gold;
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    height: 20px;
+    text-decoration: none;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+// FOOTER
+
+footer{
+    text-align: center;
+}
+
+footer div{
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+
+
+    ul{
+        text-align: center;
+    }
+
+    ul li{
+        list-style-type: none;
+        display: inline;
+    }
+
+    li a{
+        text-decoration: none;
+        display: inline;
+        color: lightgray;
+        //text-align: center;
+        padding: 10px;
+        font-family: 'Playfair Display', serif;
+    }
+
+}
+
+// MEDIA QUERIES
+
+@media(max-width: 1248px){
+
+    main{
+
+        .column{
+            display: block;
+        }
+    
+        img{
+            width: 70%;
+        }
+    }
+}
+
+@media(max-width: 960px){
+    .container{
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .content img{
+        width: 250px;
+    }
+
+    main{
+
+        .column{
+            display: block;
+        }
+    
+       
+    
+        img{
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width:768px){
+
+    header{
+
+        .toggle{
+            display: block;
+            text-align: right;
+        }
+    
+        ul{
+            width: 100%;
+            display: none;
+        }
+
+        ul li{
+            display: block;
+            text-align: center;
+        }
+
+        .active{
+            display: block;
+        }
+
+    }
+
+    main{
+
+        .column{
+            display: block;
+        }
+    
+        img{
+            width: 70%;
+        }
+    }
+
+}

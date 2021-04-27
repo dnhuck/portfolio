@@ -1,0 +1,25 @@
+#skills .row {
+  display: flex;
+  display: block;
+  margin: auto; }
+#skills .col {
+  flex: 25%; }
+#skills .listRow {
+  display: flex; }
+#skills .listCol {
+  box-sizing: border-box;
+  flex: 50%;
+  padding: 10px 20px; }
+
+.skillWall {
+  width: 90%; }
+
+@media (max-width: 1248px) {
+  .listRow {
+    display: block; }
+
+  .listCol {
+    flex: 100%;
+    padding: 10px; } }
+
+/*# sourceMappingURL=skills.css.map */

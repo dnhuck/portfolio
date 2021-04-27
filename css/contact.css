@@ -1,0 +1,54 @@
+form {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid gold;
+  width: 75%;
+  margin-top: 10px; }
+
+.formInput input {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  width: 80%;
+  height: 2rem; }
+
+.formInput textarea {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  width: 80%;
+  height: 4rem; }
+
+.formButtons input {
+  background-color: black;
+  color: gold;
+  border: 1px solid gold;
+  border-radius: 10px;
+  width: 25%;
+  height: 30px; }
+
+@media (min-width: 768px) {
+  form {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid gold;
+    width: 55%;
+    margin-top: 10px; }
+
+  .formInput input {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 60%;
+    height: 2rem; }
+
+  .formInput textarea {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 60%;
+    height: 4rem; } }
+
+/*# sourceMappingURL=contact.css.map */

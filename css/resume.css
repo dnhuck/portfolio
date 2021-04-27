@@ -1,0 +1,13 @@
+.resume {
+  margin-bottom: 5px;
+  text-align: center; }
+  .resume a {
+    text-decoration: none;
+    color: gold;
+    text-transform: uppercase; }
+  .resume a:hover {
+    color: white; }
+  .resume img {
+    width: 50%; }
+
+/*# sourceMappingURL=resume.css.map */
